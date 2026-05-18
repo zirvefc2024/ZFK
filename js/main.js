@@ -78,8 +78,8 @@ const translations = {
     serviceOver14_2: "Cümə axşamı — 21:00",
     serviceOver14_3: "Şənbə — 18:00",
     serviceContactTitle: "Əlaqə",
-    contactRufet: "Rüfət müəllim",
-    contactAzer: "Azər müəllim",
+    contactRufet: "Rüfət",
+    contactAzer: "Anar",
 
     footerSponsorName: "KAOS",
     footerSponsorText: "Kaos Lounge — Ritmin və dadın görüş nöqtəsi",
@@ -176,8 +176,8 @@ const translations = {
     serviceOver14_2: "Четверг — 21:00",
     serviceOver14_3: "Суббота — 18:00",
     serviceContactTitle: "Контакты",
-    contactRufet: "Рюфет муаллим",
-    contactAzer: "Азер муаллим",
+    contactRufet: "Рюфет",
+    contactAzer: "Анар",
 
     footerSponsorName: "KAOS",
     footerSponsorText: "Kaos Lounge — место, где встречаются ритм и вкус",
@@ -274,8 +274,8 @@ const translations = {
     serviceOver14_2: "Thursday — 21:00",
     serviceOver14_3: "Saturday — 18:00",
     serviceContactTitle: "Contact",
-    contactRufet: "Rüfət teacher",
-    contactAzer: "Azər teacher",
+    contactRufet: "Rüfət",
+    contactAzer: "Anar",
 
     footerSponsorName: "KAOS",
     footerSponsorText: "Kaos Lounge — where rhythm meets taste",
