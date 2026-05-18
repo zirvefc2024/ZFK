@@ -878,7 +878,7 @@ const clubData = {
         age: 12,
         joined: 2024,
         position: { az: "Yarımmüdafiəçi", ru: "Полузащитник", en: "Midfielder" },
-        photo: "img/anon.jpg"
+        photo: "img/players/aliska.jpeg"
       },
       {
         name: "Omar Mammadov",
@@ -1014,7 +1014,7 @@ const clubData = {
         age: 13,
         joined: 2024,
         position: { az: "Müdafiəçi", ru: "Защитник", en: "Defender" },
-        photo: "img/anon.jpg"
+        photo: "img/players/MuradMust.jpeg"
       },
       {
         name: "Camal Ferec",
@@ -1054,7 +1054,7 @@ const clubData = {
         age: 12,
         joined: 2024,
         position: { az: "Yarımmüdafiəçi", ru: "Полузащитник", en: "Midfielder" },
-        photo: "img/anon.jpg"
+        photo: "img/players/aliska.jpeg"
       },
       {
         name: "Huseyn Rakhimov",
@@ -1087,6 +1087,14 @@ const clubData = {
         joined: 2024,
         position: { az: "Hücumçu", ru: "Нападающий", en: "Forward" },
         photo: "img/players/KananAli.jpeg"
+      },
+      {
+        name: "Umar Gasanbekov",
+        number: 9,
+        age: 12,
+        joined: 2024,
+        position: { az: "Hücumçu", ru: "Нападающий", en: "Forward" },
+        photo: "img/players/umarx.jpeg"
       },
     ]
   },
@@ -1170,7 +1178,7 @@ const clubData = {
         age: 13,
         joined: 2024,
         position: { az: "Müdafiəçi", ru: "Защитник", en: "Defender" },
-        photo: "img/anon.jpg"
+        photo: "img/playrs/MuradMust.jpeg"
       },
       {
         name: "Ismayil Agayev",
