@@ -294,6 +294,10 @@ const translations = {
   }
 };
 
+const siteSettings = {
+  showTable: true // false = скрыть таблицу, true = показать
+};
+
 const achievementsData = [
   {
     tournament: {
@@ -1000,24 +1004,8 @@ const clubData = {
         photo: "img/players/Ugur.jpeg"
       },
       {
-        name: "Ramiz Qarayev",
-        number: 3,
-        age: 13,
-        joined: 2024,
-        position: { az: "Müdafiəçi", ru: "Защитник", en: "Defender" },
-        photo: "img/players/RamizQ.jpeg"
-      },
-      {
         name: "Murad Mustafayev",
         number: 17,
-        age: 13,
-        joined: 2024,
-        position: { az: "Müdafiəçi", ru: "Защитник", en: "Defender" },
-        photo: "img/anon.jpg"
-      },
-      {
-        name: "Ismayil Agayev",
-        number: 81,
         age: 13,
         joined: 2024,
         position: { az: "Müdafiəçi", ru: "Защитник", en: "Defender" },
@@ -1030,14 +1018,6 @@ const clubData = {
         joined: 2024,
         position: { az: "Müdafiəçi", ru: "Защитник", en: "Defender" },
         photo: "img/players/camal.jpeg"
-      },
-      {
-        name: "Tuncay Agayev",
-        number: 5,
-        age: 13,
-        joined: 2024,
-        position: { az: "Müdafiəçi", ru: "Защитник", en: "Defender" },
-        photo: "img/anon.jpg"
       },
       {
         name: "Murad Akhmedov",
@@ -1086,14 +1066,6 @@ const clubData = {
         joined: 2024,
         position: { az: "Hücumçu", ru: "Нападающий", en: "Forward" },
         photo: "img/players/OmerAli.jpeg"
-      },
-      {
-        name: "Mahammad Islayilzade",
-        number: 9,
-        age: 13,
-        joined: 2024,
-        position: { az: "Hücumçu", ru: "Нападающий", en: "Forward" },
-        photo: "img/anon.jpg"
       },
       {
         name: "Mehdi Cabbarli",
@@ -1364,8 +1336,23 @@ function getCurrentClubData() {
   return clubData[currentTeam];
 }
 
+function syncTableVisibility() {
+  const tableSection = document.getElementById("table");
+  const tableLinks = document.querySelectorAll('a[href="#table"]');
+  const shouldShowTable = Boolean(siteSettings.showTable);
+
+  if (tableSection) {
+    tableSection.hidden = !shouldShowTable;
+  }
+
+  tableLinks.forEach((link) => {
+    link.style.display = shouldShowTable ? "" : "none";
+  });
+}
+
 function applyTranslations() {
   document.documentElement.lang = currentLang;
+  syncTableVisibility();
 
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const key = element.dataset.i18n;
@@ -1455,6 +1442,13 @@ function closeNewsModal() {
 }
 
 function renderTable() {
+  syncTableVisibility();
+
+  if (!siteSettings.showTable) {
+    standingsTable.innerHTML = "";
+    return;
+  }
+
   standingsTable.innerHTML = "";
 
   const currentTable = [...getCurrentClubData().table].sort((a, b) => b.points - a.points);
