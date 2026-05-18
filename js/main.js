@@ -295,7 +295,7 @@ const translations = {
 };
 
 const siteSettings = {
-  showTable: true // false = скрыть таблицу, true = показать
+  showTable: false // false = скрыть таблицу, true = показать
 };
 
 const achievementsData = [
@@ -484,23 +484,16 @@ const clubData = {
     },
     coaches: [
       {
-        name: "Azər Cabbarov",
-        experience: "12+",
-        license: 'AFFA "A"',
-        text: coachBio.azer.description,
-        photo: "img/azerC.jpeg"
-      },
-      {
-        name: "Asiman Yusbov",
-        experience: "3+",
+        name: "Mammadov Samid",
+        experience: "5+",
         license: 'AFFA "C"',
         text: {
-          az: "Asiman müəllim ən kiçik yaş qruplarında uşaqların oyuna uyğunlaşması, nizam-intizam və əsas futbol bacarıqlarının formalaşdırılması üzərində işləyir.",
-          ru: "Асиман муаллим работает с самыми младшими возрастами, помогая детям адаптироваться к игре, развивать дисциплину и базовые футбольные навыки.",
-          en: "Asiman works with the youngest age groups, helping children adapt to the game and build discipline and basic football skills."
+          az: "Məmmədov Samid müəllim ən kiçik yaş qruplarında uşaqların oyuna uyğunlaşması, nizam-intizam və əsas futbol bacarıqlarının formalaşdırılması üzərində işləyir.",
+          ru: "Мамедов Самид муаллим работает с самыми младшими возрастами, помогая детям адаптироваться к игре, развивать дисциплину и базовые футбольные навыки.",
+          en: "Mammadov Samid works with the youngest age groups, helping children adapt to the game and build discipline and basic football skills."
         },
-        photo: "img/asimanC.jpeg"
-      }
+        photo: "img/samidC.jpeg"
+      },
     ],
     squad: [
       {
@@ -627,11 +620,15 @@ const clubData = {
     },
     coaches: [
       {
-        name: "Azər Cabbarov",
-        experience: "12+",
-        license: 'AFFA "A"',
-        text: coachBio.azer.description,
-        photo: "img/azerC.jpeg"
+        name: "Asiman Yusbov",
+        experience: "3+",
+        license: 'AFFA "C"',
+        text: {
+          az: "İsmayılov İlqar müəllim ən kiçik yaş qruplarında uşaqların oyuna uyğunlaşması, nizam-intizam və əsas futbol bacarıqlarının formalaşdırılması üzərində işləyir.",
+          ru: "Исмаилов Ильгар муаллим работает с самыми младшими возрастами, помогая детям адаптироваться к игре, развивать дисциплину и базовые футбольные навыки.",
+          en: "Ismayilov Ilqar works with the youngest age groups, helping children adapt to the game and build discipline and basic football skills."
+        },
+        photo: "img/asimanC.jpeg"
       }
     ],
     squad: [
@@ -788,12 +785,27 @@ const clubData = {
     },
     coaches: [
       {
-        name: "Azər Cabbarov",
-        experience: "12+",
-        license: 'AFFA "A"',
-        text: coachBio.azer.description,
-        photo: "img/azerC.jpeg"
+        name: "Asiman Yusbov",
+        experience: "3+",
+        license: 'AFFA "C"',
+        text: {
+          az: "İsmayılov İlqar müəllim ən kiçik yaş qruplarında uşaqların oyuna uyğunlaşması, nizam-intizam və əsas futbol bacarıqlarının formalaşdırılması üzərində işləyir.",
+          ru: "Исмаилов Ильгар муаллим работает с самыми младшими возрастами, помогая детям адаптироваться к игре, развивать дисциплину и базовые футбольные навыки.",
+          en: "Ismayilov Ilqar works with the youngest age groups, helping children adapt to the game and build discipline and basic football skills."
+        },
+        photo: "img/asimanC.jpeg"
       },
+      {
+        name: "Vaqif Mirzəyev",
+        experience: "3+",
+        license: 'AFFA "#"',
+        text: {
+          az: "Vaqif Mirzəyev ən kiçik yaş qruplarında uşaqların oyuna uyğunlaşması, nizam-intizam və əsas futbol bacarıqlarının formalaşdırılması üzərində işləyir.",
+          ru: "Вагиф Мирзаев работает с самыми младшими возрастами, помогая детям адаптироваться к игре, развивать дисциплину и базовые футбольные навыки.",
+          en: "Vaqif Mirzayev works with the youngest age groups, helping children adapt to the game and build discipline and basic football skills."
+        },
+        photo: "img/VaqifM.jpeg"
+      }
     ],
     squad: [
       {
@@ -968,22 +980,15 @@ const clubData = {
     },
     coaches: [
       {
-        name: "Azər Cabbarov",
-        experience: "12+",
-        license: 'AFFA "A"',
-        text: coachBio.azer.description,
-        photo: "img/azerC.jpeg"
-      },
-      {
-        name: "Asiman Yusbov",
+        name: "Elmir Alıyev",
         experience: "3+",
         license: 'AFFA "C"',
         text: {
-          az: "Asiman müəllim ən kiçik yaş qruplarında uşaqların oyuna uyğunlaşması, nizam-intizam və əsas futbol bacarıqlarının formalaşdırılması üzərində işləyir.",
-          ru: "Асиман муаллим работает с самыми младшими возрастами, помогая детям адаптироваться к игре, развивать дисциплину и базовые футбольные навыки.",
-          en: "Asiman works with the youngest age groups, helping children adapt to the game and build discipline and basic football skills."
+          az: "Elmir Əliyev ən kiçik yaş qruplarında uşaqların oyuna uyğunlaşması, nizam-intizam və əsas futbol bacarıqlarının formalaşdırılması üzərində işləyir.",
+          ru: "Эльмир Алиев работает с самыми младшими возрастами, помогая детям адаптироваться к игре, развивать дисциплину и базовые футбольные навыки.",
+          en: "Elmir Aliyev works with the youngest age groups, helping children adapt to the game and build discipline and basic football skills."
         },
-        photo: "img/asimanC.jpeg"
+        photo: "img/Elm.jpeg"
       }
     ],
     squad: [
@@ -1110,13 +1115,6 @@ const clubData = {
       tournament: "AFFA U-14 Round 10"
     },
     coaches: [
-      {
-        name: "Azər Cabbarov",
-        experience: "12+",
-        license: 'AFFA "A"',
-        text: coachBio.azer.description,
-        photo: "img/azerC.jpeg"
-      },
       {
         name: "Mammadov Samid",
         experience: "5+",
