@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zirvə FC</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="css/main.css" />
+
+  <link rel="icon" type="image/png" href="img/zirvelogo.png" />
+  <link rel="shortcut icon" href="img/zirvelogo.png" />
+  <link rel="apple-touch-icon" href="img/zirvelogo.png" />
+</head>
+<body>
+  <div class="bg-blur bg-blur-1"></div>
+  <div class="bg-blur bg-blur-2"></div>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand">
+        <img src="img/zirvelogo.png" alt="Zirvə FC Logo" class="brand-logo" />
+        <div class="brand-text">
+          <span class="brand-title">Zirvə FC</span>
+          <span class="brand-subtitle" data-i18n="brandSubtitle">Azərbaycan futbol klubu</span>
+        </div>
+      </a>
+
+      <nav class="main-nav">
+        <a href="#home" data-i18n="navHome">Home</a>
+        <a href="#achievements" data-i18n="navAchievements">Achievements</a>
+        <a href="#table" data-i18n="navTable">Table</a>
+        <a href="#coaches" data-i18n="navCoaches">Coaches</a>
+        <a href="#squad" data-i18n="navSquad">Squad</a>
+        <a href="#services" data-i18n="navServices">Services</a>
+      </nav>
+
+      <div class="header-controls">
+        <div class="team-switcher" id="teamSwitcher">
+          <button class="team-switch-btn" id="teamSwitchBtn" type="button">
+            <span data-i18n="teamSelect">Team</span>
+            <strong id="currentTeamLabel">U-13</strong>
+            <span class="team-switch-arrow">▾</span>
+          </button>
+
+          <div class="team-switch-menu" id="teamSwitchMenu">
+            <button class="team-option" type="button" data-team="u10">U-10</button>
+            <button class="team-option" type="button" data-team="u11">U-11</button>
+            <button class="team-option" type="button" data-team="u12">U-12</button>
+            <button class="team-option active" type="button" data-team="u13">U-13</button>
+            <button class="team-option" type="button" data-team="u14">U-14</button>
+          </div>
+        </div>
+
+        <div class="lang-switcher">
+          <button class="lang-btn" data-lang="az" title="Azərbaycan">🇦🇿</button>
+          <button class="lang-btn active" data-lang="ru" title="Русский">🇷🇺</button>
+          <button class="lang-btn" data-lang="en" title="English">🇬🇧</button>
+        </div>
+
+        <button class="burger" id="burgerBtn" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home" data-i18n="navHome">Home</a>
+      <a href="#achievements" data-i18n="navAchievements">Achievements</a>
+      <a href="#table" data-i18n="navTable">Table</a>
+      <a href="#coaches" data-i18n="navCoaches">Coaches</a>
+      <a href="#squad" data-i18n="navSquad">Squad</a>
+      <a href="#services" data-i18n="navServices">Services</a>
+
+      <div class="mobile-menu-divider"></div>
+
+      <div class="mobile-lang-title" data-i18n="mobileLangTitle">Language</div>
+      <div class="mobile-lang-switcher">
+        <button class="lang-btn" data-lang="az" title="Azərbaycan">🇦🇿</button>
+        <button class="lang-btn active" data-lang="ru" title="Русский">🇷🇺</button>
+        <button class="lang-btn" data-lang="en" title="English">🇬🇧</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow" data-i18n="heroEyebrow">Official club page</p>
+          <h1 data-i18n="heroTitle">Zirvə FC — energy, discipline and ambition</h1>
+          <p class="hero-text" data-i18n="heroText">
+            Modern club page with news, table, match preview and squad showcase.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#news" class="btn btn-primary" data-i18n="btnNews">News</a>
+            <a href="#services" class="btn btn-secondary" data-i18n="btnJoin">Join us</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-card">
+              <span class="stat-value">2024</span>
+              <span class="stat-label" data-i18n="statFounded">Founded</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-value">ZFC</span>
+              <span class="stat-label" data-i18n="statCode">Club code</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-value" id="heroTeamBadge">U-13</span>
+              <span class="stat-label" data-i18n="statTeam">Current team</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal delay-1">
+          <div class="hero-photo-wrap floating">
+            <div class="hero-photo-frame">
+              <img src="img/team.jpeg" alt="Zirvə FC Team" class="hero-team-photo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="trainingVideo">
+      <div class="container">
+        <div class="training-video-card reveal">
+          <div class="training-video-content">
+            <p class="section-kicker" data-i18n="videoKicker">Training process</p>
+            <h2 data-i18n="videoTitle">Inside Zirvə FC training</h2>
+            <p data-i18n="videoDesc">
+              A look at the energy, discipline and atmosphere of our training sessions.
+            </p>
+          </div>
+
+          <div class="training-video-frame">
+            <video controls muted poster="img/promo.png">
+              <source src="video/promoV.MOV" />
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="news">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-kicker" data-i18n="newsKicker">Latest updates</p>
+            <h2 data-i18n="newsTitle">News</h2>
+          </div>
+          <p class="section-desc" data-i18n="newsDesc">
+            Club news and latest updates.
+          </p>
+        </div>
+
+        <div class="news-row reveal delay-1" id="newsList"></div>
+      </div>
+    </section>
+
+    <section class="section" id="achievements">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-kicker" data-i18n="achievementsKicker">International path</p>
+            <h2 data-i18n="achievementsTitle">Achievements</h2>
+          </div>
+          <p class="section-desc" data-i18n="achievementsDesc">
+            Results of our teams in international tournaments.
+          </p>
+        </div>
+
+        <div class="achievements-card reveal delay-1">
+          <div class="achievements-head">
+            <span data-i18n="achievementsTournament">Tournament</span>
+            <span data-i18n="achievementsTeam">Team</span>
+            <span data-i18n="achievementsResult">Result</span>
+          </div>
+          <div id="achievementsTable"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="table">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-kicker" data-i18n="tableKicker">League position</p>
+            <h2 data-i18n="tableTitle">Table</h2>
+          </div>
+          <p class="section-desc" data-i18n="tableDesc">
+            Here you can see the current league standings and points.
+          </p>
+        </div>
+
+        <div class="table-card reveal delay-1">
+          <div class="table-head">
+            <span>#</span>
+            <span data-i18n="tableClub">Club</span>
+            <span data-i18n="tablePoints">Points</span>
+          </div>
+          <div class="table-body" id="standingsTable"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="match">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-kicker" data-i18n="matchKicker">Match center</p>
+            <h2 data-i18n="matchTitle">Next match</h2>
+          </div>
+        </div>
+
+        <div class="match-card reveal delay-1" id="nextMatch"></div>
+      </div>
+    </section>
+
+    <section class="section" id="coaches">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-kicker" data-i18n="coachesKicker">Staff</p>
+            <h2>
+              <span data-i18n="coachesTitle">Coaches</span>
+              <span class="section-team-badge" id="coachesTeamBadge">U-13</span>
+            </h2>
+          </div>
+          <p class="section-desc" data-i18n="coachesDesc">
+            Coaching staff for the selected team.
+          </p>
+        </div>
+
+        <div class="coaches-grid reveal delay-1" id="coachesList"></div>
+      </div>
+    </section>
+
+    <section class="section" id="squad">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-kicker" data-i18n="squadKicker">Team</p>
+            <h2>
+              <span data-i18n="squadTitle">Squad</span>
+              <span class="section-team-badge" id="sectionTeamBadge">U-13</span>
+            </h2>
+          </div>
+          <p class="section-desc" data-i18n="squadDesc">
+            Explore the squad and learn more about each player.
+          </p>
+        </div>
+
+        <div class="squad-scroller reveal delay-1" id="squadList"></div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-kicker" data-i18n="servicesKicker">Training & contact</p>
+            <h2 data-i18n="servicesTitle">Zirvə FC — Football Services</h2>
+          </div>
+          <p class="section-desc" data-i18n="servicesDesc">
+            Training information, schedule and contacts.
+          </p>
+        </div>
+
+        <div class="services-grid reveal delay-1">
+
+          <div class="service-card">
+            <h3 data-i18n="serviceBlock1Title">Football training for children</h3>
+
+            <p data-i18n="serviceAcceptance">
+              Admission is open for children born between 2009 and 2020.
+            </p>
+
+            <div class="service-point">
+              <strong data-i18n="servicePlaceTitle">Training venue:</strong>
+              <p data-i18n="servicePlaceText">
+                Baku Arena (former Shafa Stadium), Field 4
+              </p>
+            </div>
+
+            <div class="service-point">
+              <strong data-i18n="serviceIndividualTitle">Individual training:</strong>
+              <p data-i18n="serviceIndividualText">
+                Individual sessions are conducted by our head coach Azər Cabbarov.
+              </p>
+            </div>
+
+            <div class="service-point">
+              <strong data-i18n="serviceGroupTitle">Group training:</strong>
+              <p data-i18n="serviceGroupText">
+                Group sessions are carried out under his supervision.
+              </p>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <h3 data-i18n="serviceScheduleTitle">Training schedule</h3>
+
+            <div class="schedule-group">
+              <strong data-i18n="serviceUnder14">Group up to 14 years old:</strong>
+              <ul>
+                <li data-i18n="serviceUnder14_1">Tuesday — 20:00</li>
+                <li data-i18n="serviceUnder14_2">Thursday — 20:00</li>
+                <li data-i18n="serviceUnder14_3">Saturday — 18:00</li>
+              </ul>
+            </div>
+
+            <div class="schedule-group">
+              <strong data-i18n="serviceOver14">Group over 14 years old:</strong>
+              <ul>
+                <li data-i18n="serviceOver14_1">Tuesday — 21:00</li>
+                <li data-i18n="serviceOver14_2">Thursday — 21:00</li>
+                <li data-i18n="serviceOver14_3">Saturday — 18:00</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <h3 data-i18n="serviceContactTitle">Contact</h3>
+
+            <div class="contact-line">
+              <span data-i18n="contactRufet">Rüfət müəllim</span>
+              <a href="https://wa.me/994517218485" target="_blank">+994 51 721 84 85</a>
+            </div>
+
+            <div class="contact-line">
+              <span data-i18n="contactAzer">Azər müəllim</span>
+              <a href="https://wa.me/994505282211" target="_blank">+994 50 528 22 11</a>
+            </div>
+
+            <div class="contact-line insta-line">
+              <div class="insta-wrap">
+                <img src="img/ig.png" alt="Instagram" class="insta-icon">
+                <span>Instagram</span>
+              </div>
+
+              <a href="https://www.instagram.com/zirvefc_official?utm_source=qr&igsh=NjJkeGhsZzFiNThx"
+                target="_blank"
+                class="insta-link">
+                @zirvefc_official
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-classic reveal">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <img src="img/zirvelogo.png" alt="Zirvə FC Logo" class="footer-club-logo" />
+            <div>
+              <h3>Zirvə FC</h3>
+              <p data-i18n="footerAboutText">
+                Zirvə FC is a modern football project with ambition, identity and a drive to grow every season.
+              </p>
+            </div>
+          </div>
+
+          <div class="footer-sponsor">
+            <img src="img/kaos.png" alt="Sponsor Logo" class="footer-sponsor-logo" />
+            <div>
+              <strong data-i18n="footerSponsorName">KAOS</strong>
+              <p data-i18n="footerSponsorText">KAOS Lounge - Best time, best food, best memories</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-bottom">
+          <div class="footer-copy">
+            <p>© <span id="currentYear"></span> Zirvə FC. All rights reserved.</p>
+          </div>
+
+          <div class="footer-links">
+            <a href="sponsors.html" class="footer-link-btn" data-i18n="footerAllSponsors">All partners</a>
+            <a href="officials.html" class="footer-link-btn" data-i18n="footerOfficials">Officials</a>
+          </div>
+
+          <div class="footer-madeby">
+            <img src="img/VerixLogo.PNG" alt="VERIX Logo" class="footer-verix-logo" />
+            <div>
+              <strong>Made by VERIX</strong>
+              <small>Founded by Umid Qurbanli</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="news-modal" id="newsModal">
+    <div class="news-modal-backdrop" id="newsModalBackdrop"></div>
+
+    <div class="news-modal-card">
+      <button class="news-modal-close" id="newsModalClose" aria-label="Close">×</button>
+      <img src="" alt="" class="news-modal-image" id="modalImage" />
+      <div class="news-modal-content">
+        <span class="news-modal-date" id="modalDate"></span>
+        <h3 id="modalTitle"></h3>
+        <p id="modalText"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="coach-modal" id="coachModal">
+    <div class="news-modal-backdrop" id="coachModalBackdrop"></div>
+
+    <div class="coach-modal-card">
+      <button class="news-modal-close" id="coachModalClose" aria-label="Close">×</button>
+      <div class="coach-modal-content">
+        <span class="coach-modal-label" id="coachModalLicense"></span>
+        <h3 id="coachModalName"></h3>
+        <p class="coach-modal-meta" id="coachModalMeta"></p>
+        <p id="coachModalText"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

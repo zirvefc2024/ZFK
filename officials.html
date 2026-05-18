@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zirvə FC — Officials</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="css/officials.css" />
+
+  <link rel="icon" type="image/png" href="img/zirvelogo.png" />
+  <link rel="shortcut icon" href="img/zirvelogo.png" />
+  <link rel="apple-touch-icon" href="img/zirvelogo.png" />
+</head>
+<body>
+  <div class="bg-blur bg-blur-1"></div>
+  <div class="bg-blur bg-blur-2"></div>
+
+  <header class="officials-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="img/zirvelogo.png" alt="Zirvə FC Logo" class="brand-logo" />
+        <div class="brand-text">
+          <span class="brand-title">Zirvə FC</span>
+          <span class="brand-subtitle" data-i18n="brandSubtitle">Azərbaycan futbol klubu</span>
+        </div>
+      </a>
+
+      <nav class="header-nav">
+        <a href="index.html" data-i18n="backToMain">Back to main site</a>
+      </nav>
+
+      <div class="lang-switcher">
+        <button class="lang-btn" data-lang="az" title="Azərbaycan">AZ</button>
+        <button class="lang-btn active" data-lang="ru" title="Русский">RU</button>
+        <button class="lang-btn" data-lang="en" title="English">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="officials-hero">
+      <div class="container">
+        <div class="hero-box reveal">
+          <p class="hero-kicker" data-i18n="heroKicker">Leadership & Management</p>
+          <h1 data-i18n="heroTitle">Official representatives of Zirvə FC</h1>
+          <p class="hero-text" data-i18n="heroText">
+            Meet the people shaping the club’s direction, management, marketing and sporting structure.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="officialsList"></section>
+  </main>
+
+  <footer class="officials-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <img src="img/zirvelogo.png" alt="Zirvə FC Logo" class="footer-logo" />
+        <div>
+          <strong>Zirvə FC</strong>
+          <p data-i18n="footerText">Official club management page.</p>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <a href="index.html" class="footer-link" data-i18n="backToMain">Back to main site</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/officials.js"></script>
+</body>
+</html>
