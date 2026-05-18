@@ -176,7 +176,7 @@ const translations = {
     serviceOver14_2: "Четверг — 21:00",
     serviceOver14_3: "Суббота — 18:00",
     serviceContactTitle: "Контакты",
-    contactRufet: "Рюфет",
+    contactRufet: "Рюфат",
     contactAzer: "Анар",
 
     footerSponsorName: "KAOS",
