@@ -39,31 +39,6 @@ const translations = {
 
 const officialsData = [
   {
-    key: "rufat",
-    name: "Cabbarov Rufat",
-    role: {
-      az: "Klub meneceri",
-      ru: "Клубный менеджер",
-      en: "Club Manager"
-    },
-    experience: {
-      az: "8+ il",
-      ru: "8+ лет",
-      en: "8+ years"
-    },
-    focus: {
-      az: "İdarəetmə və koordinasiya",
-      ru: "Управление и координация",
-      en: "Management & coordination"
-    },
-    description: {
-      az: "Cabbarov Rufat klubun gündəlik idarəetmə prosesinə, daxili koordinasiyaya və strukturun sabit işləməsinə cavabdehdir. O, komanda daxilində kommunikasiya axınını nəzarətdə saxlayır, təşkilati məsələlərin operativ həllində iştirak edir və klubun funksional ritmini qorumaqda əsas fiqurlardan biridir.",
-      ru: "Cabbarov Rufat отвечает за ежедневное управление клубом, внутреннюю координацию и стабильную работу структуры. Он контролирует коммуникационные процессы внутри команды, участвует в оперативном решении организационных вопросов и является одной из ключевых фигур в поддержании рабочего ритма клуба.",
-      en: "Cabbarov Rufat is responsible for the club’s daily management, internal coordination and structural stability. He oversees communication flow within the organization, supports operational decision-making and plays a key role in maintaining the club’s working rhythm."
-    },
-    photo: "img/RufatC.jpeg"
-  },
-  {
     key: "ramil",
     name: "Valiyev Ramil",
     role: {
@@ -87,6 +62,31 @@ const officialsData = [
       en: "Valiyev Ramil leads the club’s strategic vision and defines the long-term direction of Zirvə FC. Under his leadership, the club aims to balance administrative stability, sporting quality and institutional growth."
     },
     photo: "img/ramilV.jpeg"
+  },
+  {
+    key: "rufat",
+    name: "Cabbarov Rufat",
+    role: {
+      az: "Klub meneceri",
+      ru: "Клубный менеджер",
+      en: "Club Manager"
+    },
+    experience: {
+      az: "8+ il",
+      ru: "8+ лет",
+      en: "8+ years"
+    },
+    focus: {
+      az: "İdarəetmə və koordinasiya",
+      ru: "Управление и координация",
+      en: "Management & coordination"
+    },
+    description: {
+      az: "Cabbarov Rufat klubun gündəlik idarəetmə prosesinə, daxili koordinasiyaya və strukturun sabit işləməsinə cavabdehdir. O, komanda daxilində kommunikasiya axınını nəzarətdə saxlayır, təşkilati məsələlərin operativ həllində iştirak edir və klubun funksional ritmini qorumaqda əsas fiqurlardan biridir.",
+      ru: "Cabbarov Rufat отвечает за ежедневное управление клубом, внутреннюю координацию и стабильную работу структуры. Он контролирует коммуникационные процессы внутри команды, участвует в оперативном решении организационных вопросов и является одной из ключевых фигур в поддержании рабочего ритма клуба.",
+      en: "Cabbarov Rufat is responsible for the club’s daily management, internal coordination and structural stability. He oversees communication flow within the organization, supports operational decision-making and plays a key role in maintaining the club’s working rhythm."
+    },
+    photo: "img/RufatC.jpeg"
   },
 ];
 
