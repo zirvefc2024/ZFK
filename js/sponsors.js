@@ -56,9 +56,9 @@ const sponsorsData = [
     logo: "img/oztekstil.jpg",
     website: "https://www.instagram.com/oz_tekstil_?igsh=aWNlNDI0bGNoZXNs",
     description: {
-      az: "Öz Tekstil Zirvə FC-nin rəsmi tərəfdaşlarından biridir və klubun tekstil məhsulları, geyim həlləri və keyfiyyətli istehsal sahəsində dəstək göstərir.",
-      ru: "Öz Tekstil — один из официальных партнёров Zirvə FC, поддерживающий клуб в сфере текстильной продукции, производства одежды и качественных решений.",
-      en: "Öz Tekstil is one of Zirvə FC’s official partners, supporting the club with textile products, apparel manufacturing and quality production solutions."
+      az: "Öz Tekstil Zirvə FC-nin tərəfdaşlarından biridir və klubun tekstil məhsulları, geyim həlləri və keyfiyyətli istehsal sahəsində dəstək göstərir.",
+      ru: "Öz Tekstil — один из партнёров Zirvə FC, поддерживающий клуб в сфере текстильной продукции, производства одежды и качественных решений.",
+      en: "Öz Tekstil is one of Zirvə FC’s partners, supporting the club with textile products, apparel manufacturing and quality production solutions."
     }
   },
   {
@@ -66,9 +66,9 @@ const sponsorsData = [
     logo: "img/drmilk.jpg",
     website: "https://www.instagram.com/drmilk.az?igsh=N2Y4cjlpZXdiNnp6",
     description: {
-      az: "Dr.Milk Zirvə FC-nin rəsmi tərəfdaşlarından biridir və klubu keyfiyyətli süd məhsulları, sağlam qidalanma və etibarlı istehsal dəstəyi ilə təmin edir.",
-      ru: "Dr.Milk — один из официальных партнёров Zirvə FC, обеспечивающий клуб качественной молочной продукцией, поддержкой здорового питания и надёжным производством.",
-      en: "Dr.Milk is one of Zirvə FC’s official partners, supporting the club with quality dairy products, healthy nutrition and reliable production support."
+      az: "Dr.Milk Zirvə FC-nin tərəfdaşlarından biridir və klubu keyfiyyətli süd məhsulları, sağlam qidalanma və etibarlı istehsal dəstəyi ilə təmin edir.",
+      ru: "Dr.Milk — один из партнёров Zirvə FC, обеспечивающий клуб качественной молочной продукцией, поддержкой здорового питания и надёжным производством.",
+      en: "Dr.Milk is one of Zirvə FC’s partners, supporting the club with quality dairy products, healthy nutrition and reliable production support."
     }
   },
   { //Копируйте отсюда
@@ -76,9 +76,9 @@ const sponsorsData = [
     logo: "img/verixlogovaf.png",
     website: "https://www.instagram.com/verix_studio?igsh=MXNueWdrM3M3MDVtcw==", //Это может быть и Инста или ТТ,  необязательно сайт
     description: {
-      az: "VERIX Studio Zirvə FC-nin rəsmi tərəfdaşlarından biridir və klubun rəqəmsal görünüşü, veb həlləri və təqdimat keyfiyyətinin formalaşmasında dəstək göstərir.",
-      ru: "VERIX Studio — один из официальных партнёров Zirvə FC, поддерживающий цифровое развитие клуба, веб-решения и визуальную презентацию.",
-      en: "VERIX Studio is one of Zirvə FC’s official partners, supporting the club’s digital presence, web solutions and visual presentation."
+      az: "VERIX Studio Zirvə FC-nin tərəfdaşlarından biridir və klubun rəqəmsal görünüşü, veb həlləri və təqdimat keyfiyyətinin formalaşmasında dəstək göstərir.",
+      ru: "VERIX Studio — один из партнёров Zirvə FC, поддерживающий цифровое развитие клуба, веб-решения и визуальную презентацию.",
+      en: "VERIX Studio is one of Zirvə FC’s partners, supporting the club’s digital presence, web solutions and visual presentation."
     }
   }, // Чтобы добавить спонсора копируйте сверху (Я отметил откуда) и вставляете вниз и заполняете данные
 ];
