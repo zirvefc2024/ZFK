@@ -1477,40 +1477,32 @@ button {
 
 .training-video-card {
   display: grid;
-  grid-template-columns: 1fr 420px;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 460px);
   gap: 40px;
   align-items: center;
   padding: 40px;
   border-radius: var(--radius);
-  background: linear-gradient(
-    135deg,
-    rgba(239,44,122,0.1),
-    rgba(25,79,159,0.12)
-  );
+  background: linear-gradient(135deg, rgba(239,44,122,0.1), rgba(25,79,159,0.12));
   border: 1px solid rgba(255,255,255,0.1);
   box-shadow: var(--shadow);
-}
-
-.training-video-content h2 {
-  font-size: clamp(1.8rem, 3vw, 3rem);
-  margin-bottom: 12px;
-}
-
-.training-video-content p {
-  color: var(--muted);
-  line-height: 1.7;
+  overflow: hidden;
 }
 
 .training-video-frame {
+  width: 100%;
+  max-width: 460px;
+  justify-self: end;
+  aspect-ratio: 9 / 16;
   border-radius: 24px;
   overflow: hidden;
   border: 1px solid rgba(255,255,255,0.12);
   box-shadow: 0 20px 45px rgba(0,0,0,0.28);
+  background: #000;
 }
 
 .training-video-frame iframe {
   width: 100%;
-  height: 720px;
+  height: 100%;
   display: block;
   border: 0;
 }
@@ -1518,9 +1510,11 @@ button {
 @media (max-width: 900px) {
   .training-video-card {
     grid-template-columns: 1fr;
+    padding: 28px;
   }
 
-  .training-video-frame iframe {
-    height: 600px;
+  .training-video-frame {
+    justify-self: center;
+    max-width: 420px;
   }
 }
