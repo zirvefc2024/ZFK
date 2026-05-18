@@ -1505,12 +1505,12 @@ button {
   box-shadow: 0 20px 45px rgba(0,0,0,0.28);
 }
 
-.training-video-frame video {
+.training-video-frame iframe {
   width: 100%;
   display: block;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
+  aspect-ratio: 9 / 16;
   background: #000;
+  border: 0;
 }
 
 @media (max-width: 900px) {
