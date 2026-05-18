@@ -1477,15 +1477,18 @@ button {
 
 .training-video-card {
   display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
-  gap: 24px;
+  grid-template-columns: 1fr 420px;
+  gap: 40px;
   align-items: center;
-  padding: 26px;
+  padding: 40px;
   border-radius: var(--radius);
-  background: linear-gradient(135deg, rgba(239,44,122,0.1), rgba(25,79,159,0.12));
+  background: linear-gradient(
+    135deg,
+    rgba(239,44,122,0.1),
+    rgba(25,79,159,0.12)
+  );
   border: 1px solid rgba(255,255,255,0.1);
   box-shadow: var(--shadow);
-  overflow: hidden;
 }
 
 .training-video-content h2 {
