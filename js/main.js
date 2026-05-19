@@ -488,9 +488,9 @@ const clubData = {
         experience: "5+",
         license: 'AFFA "C"',
         text: {
-          az: "Məmmədov Samid müəllim ən kiçik yaş qruplarında uşaqların oyuna uyğunlaşması, nizam-intizam və əsas futbol bacarıqlarının formalaşdırılması üzərində işləyir.",
-          ru: "Мамедов Самид муаллим работает с самыми младшими возрастами, помогая детям адаптироваться к игре, развивать дисциплину и базовые футбольные навыки.",
-          en: "Mammadov Samid works with the youngest age groups, helping children adapt to the game and build discipline and basic football skills."
+          az: "Məmmədov Samid uşaqlarla fərdi yanaşma əsasında çalışaraq onların texniki bacarıqlarını inkişaf etdirməyə və komandada düzgün oyun düşüncəsi formalaşdırmağa kömək edir.",
+          ru: "Мамедов Самид работает с детьми индивидуально, помогая развивать технические навыки и формировать правильное игровое мышление в команде.",
+          en: "Mammadov Samid works with children through an individual approach, helping them improve technical abilities and develop proper team-play awareness."
         },
         photo: "img/samidC.jpeg"
       },
@@ -620,13 +620,13 @@ const clubData = {
     },
     coaches: [
       {
-        name: "Asiman Yusbov",
+        name: "Asiman Yusubov",
         experience: "3+",
         license: 'AFFA "C"',
         text: {
-          az: "İsmayılov İlqar müəllim ən kiçik yaş qruplarında uşaqların oyuna uyğunlaşması, nizam-intizam və əsas futbol bacarıqlarının formalaşdırılması üzərində işləyir.",
-          ru: "Исмаилов Ильгар муаллим работает с самыми младшими возрастами, помогая детям адаптироваться к игре, развивать дисциплину и базовые футбольные навыки.",
-          en: "Ismayilov Ilqar works with the youngest age groups, helping children adapt to the game and build discipline and basic football skills."
+          az: "Asiman Yusubov məşqlərdə uşaqlarda sürət, koordinasiya və oyuna olan marağın artırılmasına xüsusi diqqət yetirir.",
+          ru: "Асиман Юсубов уделяет особое внимание развитию скорости, координации и интереса детей к футболу во время тренировок.",
+          en: "Asiman Yusubov focuses on improving children’s speed, coordination, and passion for football during training sessions."
         },
         photo: "img/asimanC.jpeg"
       }
@@ -785,13 +785,13 @@ const clubData = {
     },
     coaches: [
       {
-        name: "Asiman Yusbov",
+        name: "Asiman Yusubov",
         experience: "3+",
         license: 'AFFA "C"',
         text: {
-          az: "İsmayılov İlqar müəllim ən kiçik yaş qruplarında uşaqların oyuna uyğunlaşması, nizam-intizam və əsas futbol bacarıqlarının formalaşdırılması üzərində işləyir.",
-          ru: "Исмаилов Ильгар муаллим работает с самыми младшими возрастами, помогая детям адаптироваться к игре, развивать дисциплину и базовые футбольные навыки.",
-          en: "Ismayilov Ilqar works with the youngest age groups, helping children adapt to the game and build discipline and basic football skills."
+          az: "Asiman Yusubov məşqlərdə uşaqlarda sürət, koordinasiya və oyuna olan marağın artırılmasına xüsusi diqqət yetirir.",
+          ru: "Асиман Юсубов уделяет особое внимание развитию скорости, координации и интереса детей к футболу во время тренировок.",
+          en: "Asiman Yusubov focuses on improving children’s speed, coordination, and passion for football during training sessions."
         },
         photo: "img/asimanC.jpeg"
       },
@@ -800,9 +800,9 @@ const clubData = {
         experience: "3+",
         license: 'AFFA "#"',
         text: {
-          az: "Vaqif Mirzəyev ən kiçik yaş qruplarında uşaqların oyuna uyğunlaşması, nizam-intizam və əsas futbol bacarıqlarının formalaşdırılması üzərində işləyir.",
-          ru: "Вагиф Мирзаев работает с самыми младшими возрастами, помогая детям адаптироваться к игре, развивать дисциплину и базовые футбольные навыки.",
-          en: "Vaqif Mirzayev works with the youngest age groups, helping children adapt to the game and build discipline and basic football skills."
+          az: "Vaqif Mirzəyev gənc futbolçuların taktiki düşüncəsinin inkişafı və meydanda özünəinamlı çıxış etməsi istiqamətində çalışır.",
+          ru: "Вагиф Мирзаев работает над развитием тактического мышления молодых футболистов и их уверенной игрой на поле.",
+          en: "Vaqif Mirzayev works on developing young players’ tactical understanding and confidence on the field."
         },
         photo: "img/VaqifM.jpeg"
       }
@@ -984,9 +984,9 @@ const clubData = {
         experience: "3+",
         license: 'AFFA "C"',
         text: {
-          az: "Elmir Əliyev ən kiçik yaş qruplarında uşaqların oyuna uyğunlaşması, nizam-intizam və əsas futbol bacarıqlarının formalaşdırılması üzərində işləyir.",
-          ru: "Эльмир Алиев работает с самыми младшими возрастами, помогая детям адаптироваться к игре, развивать дисциплину и базовые футбольные навыки.",
-          en: "Elmir Aliyev works with the youngest age groups, helping children adapt to the game and build discipline and basic football skills."
+          az: "Elmir Alıyev məşqlərdə intizam, komanda ruhu və davamlı inkişaf prinsipini ön planda saxlayaraq uşaqların futbol biliklərini gücləndirir.",
+          ru: "Эльмир Алиев укрепляет футбольные навыки детей, делая акцент на дисциплине, командном духе и постоянном развитии.",
+          en: "Elmir Aliyev strengthens children’s football skills by emphasizing discipline, teamwork, and continuous improvement."
         },
         photo: "img/Elm.jpeg"
       }
@@ -1128,20 +1128,20 @@ const clubData = {
         experience: "5+",
         license: 'AFFA "C"',
         text: {
-          az: "Məmmədov Samid müəllim ən kiçik yaş qruplarında uşaqların oyuna uyğunlaşması, nizam-intizam və əsas futbol bacarıqlarının formalaşdırılması üzərində işləyir.",
-          ru: "Мамедов Самид муаллим работает с самыми младшими возрастами, помогая детям адаптироваться к игре, развивать дисциплину и базовые футбольные навыки.",
-          en: "Mammadov Samid works with the youngest age groups, helping children adapt to the game and build discipline and basic football skills."
+          az: "Məmmədov Samid uşaqlarla fərdi yanaşma əsasında çalışaraq onların texniki bacarıqlarını inkişaf etdirməyə və komandada düzgün oyun düşüncəsi formalaşdırmağa kömək edir.",
+          ru: "Мамедов Самид работает с детьми индивидуально, помогая развивать технические навыки и формировать правильное игровое мышление в команде.",
+          en: "Mammadov Samid works with children through an individual approach, helping them improve technical abilities and develop proper team-play awareness."
         },
         photo: "img/samidC.jpeg"
       },
       {
-        name: "Asiman Yusbov",
+        name: "Asiman Yusubov",
         experience: "3+",
         license: 'AFFA "C"',
         text: {
-          az: "İsmayılov İlqar müəllim ən kiçik yaş qruplarında uşaqların oyuna uyğunlaşması, nizam-intizam və əsas futbol bacarıqlarının formalaşdırılması üzərində işləyir.",
-          ru: "Исмаилов Ильгар муаллим работает с самыми младшими возрастами, помогая детям адаптироваться к игре, развивать дисциплину и базовые футбольные навыки.",
-          en: "Ismayilov Ilqar works with the youngest age groups, helping children adapt to the game and build discipline and basic football skills."
+          az: "Asiman Yusubov məşqlərdə uşaqlarda sürət, koordinasiya və oyuna olan marağın artırılmasına xüsusi diqqət yetirir.",
+          ru: "Асиман Юсубов уделяет особое внимание развитию скорости, координации и интереса детей к футболу во время тренировок.",
+          en: "Asiman Yusubov focuses on improving children’s speed, coordination, and passion for football during training sessions."
         },
         photo: "img/asimanC.jpeg"
       }
