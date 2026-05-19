@@ -72,9 +72,9 @@ const officialsData = [
       en: "Club Manager"
     },
     experience: {
-      az: "8+ il",
-      ru: "8+ лет",
-      en: "8+ years"
+      az: "4+ il",
+      ru: "4+ лет",
+      en: "4+ years"
     },
     focus: {
       az: "İdarəetmə və koordinasiya",
