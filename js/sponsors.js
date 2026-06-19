@@ -83,7 +83,7 @@ const sponsorsData = [
   }, // Чтобы добавить спонсора копируйте сверху (Я отметил откуда) и вставляете вниз и заполняете данные
 ];
 
-let currentLang = "ru";
+let currentLang = "az";
 const sponsorsList = document.getElementById("sponsorsList");
 
 function applyTranslations() {
@@ -101,6 +101,7 @@ function applyTranslations() {
   });
 
   renderSponsors();
+  updateStructuredData();
 }
 
 function renderSponsors() {
@@ -114,7 +115,7 @@ function renderSponsors() {
     card.innerHTML = `
       <div class="sponsor-card-inner">
         <div class="sponsor-logo-wrap">
-          <img src="${sponsor.logo}" alt="${sponsor.name}" class="sponsor-logo" />
+          <img src="${sponsor.logo}" alt="${sponsor.name} — Zirvə FC ${translations[currentLang].sponsorType}" class="sponsor-logo" loading="lazy" />
         </div>
 
         <span class="sponsor-badge">${translations[currentLang].sponsorType}</span>
@@ -131,6 +132,33 @@ function renderSponsors() {
   });
 
   initRevealAnimations();
+}
+
+// SEO: динамически генерируем JSON-LD (Organization) для текущих спонсоров.
+// Помогает Google связать бренды-партнёров со страницей Zirvə FC.
+function updateStructuredData() {
+  const existing = document.getElementById("sponsorsStructuredData");
+  if (existing) {
+    existing.remove();
+  }
+
+  const orgSchema = sponsorsData.map((sponsor) => ({
+    "@type": "Organization",
+    "name": sponsor.name,
+    "description": sponsor.description[currentLang],
+    "logo": `https://zirvefc.com/${sponsor.logo}`,
+    "url": sponsor.website
+  }));
+
+  const script = document.createElement("script");
+  script.type = "application/ld+json";
+  script.id = "sponsorsStructuredData";
+  script.textContent = JSON.stringify({
+    "@context": "https://schema.org",
+    "@graph": orgSchema
+  });
+
+  document.head.appendChild(script);
 }
 
 function initLangButtons() {
