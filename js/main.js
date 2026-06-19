@@ -176,7 +176,7 @@ const translations = {
     serviceOver14_2: "Четверг — 21:00",
     serviceOver14_3: "Суббота — 18:00",
     serviceContactTitle: "Контакты",
-    contactRufet: "Рюфат",
+    contactRufet: "Руфат",
     contactAzer: "Анар",
 
     footerSponsorName: "KAOS",
@@ -413,26 +413,7 @@ const newsData = [
       en: "Zirvə FC delivered a strong performance in the AFFA U-13 A Round 2 league, finishing in the top 5 and securing a place in the play-offs. The team ended the league in 4th position.\n\nIn the final round, Zirvə FC drew against Ulduz, earning a crucial point to maintain their position and officially qualify for the play-off stage."
     }
   },
-  {
-    id: 2,
-    image: "img/ugurbd.jpg",
-    date: "11.04.2026",
-    title: {
-      az: "Uğurun ad günü qeyd olunur",
-      ru: "День рождения Угура",
-      en: "Ugur's Birthday"
-    },
-    shortText: {
-      az: "Komandamızın futbolçusu Uğurun bu gün 12 yaşı tamam olur.",
-      ru: "Сегодня игроку нашей команды Угуру исполнилось 12 лет.",
-      en: "Today our player Ugur turns 12 years old."
-    },
-    fullText: {
-      az: "11 aprel tarixində Zirvə FC futbolçusu Uğurun ad günü qeyd olunur. Bu gün onun 12 yaşı tamam olur.\n\nKlubumuz adından Uğura möhkəm can sağlığı, uğurlar və futbol yolunda böyük nailiyyətlər arzulayırıq. Ad günün mübarək!",
-      ru: "11 апреля отмечается день рождения игрока Zirvə FC Угура. Сегодня ему исполнилось 12 лет.\n\nОт имени нашего клуба желаем Угуру крепкого здоровья, больших успехов и ярких побед на футбольном пути. С днём рождения!",
-      en: "On April 11, Zirvə FC player Ugur celebrates his birthday. Today he turns 12 years old.\n\nOn behalf of our club, we wish Ugur strong health, great success and many victories in his football journey. Happy Birthday!"
-    }
-  },
+  
   { // Вот с этой строки копируйте
     id: 3,
     image: "img/novruz.jpg",
@@ -475,7 +456,7 @@ const newsData = [
   },
   {
     id: 5,
-    image: "img/Elmir m.jpeg",
+    image: "img/U-12.jpeg",
     date: "16.06.2026",
     title: {
       az: "Zirvə FC U-12 Elit layihəsi seçim turnirində 2-ci yeri tutdu",
@@ -1028,7 +1009,7 @@ const clubData = {
           ru: "Эльмир Алиев укрепляет футбольные навыки детей, делая акцент на дисциплине, командном духе и постоянном развитии.",
           en: "Elmir Aliyev strengthens children’s football skills by emphasizing discipline, teamwork, and continuous improvement."
         },
-        photo: "img/Elm.jpeg"
+        photo: "img/Elmir m.jpeg"
       }
     ],
     squad: [
