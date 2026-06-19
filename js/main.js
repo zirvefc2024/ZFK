@@ -452,6 +452,46 @@ const newsData = [
       ru: "Zirvə FC блестяще выступил на Novruz Turniri и завоевал чемпионский титул. В финальном матче наша команда одержала победу над Интер Баку со счётом 5-4 и подняла трофей над головой.\n\nПуть в турнире начался с первого тура, где Zirvə FC разгромил ФК Qartal со счётом 14-0. На протяжении всего турнира команда показывала яркий футбол и заслуженно стала победителем.\n\nПоздравляем Zirvə FC с этим большим успехом!",
       en: "Zirvə FC delivered an outstanding performance in the Novruz Tournament and claimed the championship title. In the final, our team defeated Inter Baku by a 5-4 scoreline and lifted the trophy.\n\nThe journey began in the opening round with a dominant 14-0 victory over FC Qartal. Throughout the tournament, the team played exciting football and deservedly became champions.\n\nCongratulations to Zirvə FC on this great achievement!"
     }
+  },
+  {
+    id: 4,
+    image: "img/MTV.jpeg",
+    date: "13.06.2026",
+    title: {
+      az: "Zirvə FC \"Uşaq Akademiyası\" proqramında",
+      ru: "Zirvə FC в программе «Uşaq Akademiyası»",
+      en: "Zirvə FC featured on \"Uşaq Akademiyası\""
+    },
+    shortText: {
+      az: "Komandamız MTV Azərbaycan kanalında yayımlanan \"Uşaq Akademiyası\" proqramında iştirak etdi.",
+      ru: "Наша команда приняла участие в программе «Uşaq Akademiyası» на канале MTV Azərbaycan.",
+      en: "Our team took part in the \"Uşaq Akademiyası\" program on MTV Azərbaycan."
+    },
+    fullText: {
+      az: "Zirvə FC komandası MTV Azərbaycan kanalında yayımlanan \"Uşaq Akademiyası\" proqramının çəkilişlərində iştirak edib.\n\nProqram çərçivəsində klubumuzun gənc futbolçuları geniş izləyici auditoriyasına təqdim olunaraq, komandamızın inkişaf prosesi və məşq mühiti haqqında məlumat verilib.",
+      ru: "Команда Zirvə FC приняла участие в съёмках программы «Uşaq Akademiyası», которая выходит на канале MTV Azərbaycan.\n\nВ рамках программы юные футболисты нашего клуба были представлены широкой аудитории зрителей, а также было рассказано о процессе развития команды и тренировочной среде.",
+      en: "The Zirvə FC team took part in the filming of \"Uşaq Akademiyası\", a program broadcast on MTV Azərbaycan.\n\nAs part of the program, our club's young players were presented to a wide television audience, with coverage of the team's development process and training environment."
+    }
+  },
+  {
+    id: 5,
+    image: "img/Elmir m.jpeg",
+    date: "16.06.2026",
+    title: {
+      az: "Zirvə FC U-12 Elit layihəsi seçim turnirində 2-ci yeri tutdu",
+      ru: "Zirvə FC U-12 занял 2-е место на селекционном турнире Elit layihəsi",
+      en: "Zirvə FC U-12 finished 2nd at the Elit layihəsi selection tournament"
+    },
+    shortText: {
+      az: "Komandamızın U-12 heyəti Elit layihəsi çərçivəsində keçirilən seleksiya turnirində 2-ci yeri tutdu.",
+      ru: "Команда U-12 нашего клуба заняла 2-е место на селекционном турнире в рамках проекта Elit layihəsi.",
+      en: "Our U-12 team finished 2nd at a selection tournament held as part of the Elit layihəsi project."
+    },
+    fullText: {
+      az: "Zirvə FC-nin U-12 komandası Elit layihəsi çərçivəsində Milli Komandaların Təlim-Məşq Mərkəzində keçirilən seleksiya xarakterli turnirdə iştirak edərək 2-ci yeri tutdu.\n\nTurnirin təşkilində əsas məqsəd müxtəlif komandalarda çıxış edən istedadlı futbolçuların izlənilməsi və Elit layihəsinə cəlb olunması üçün seçim prosesinin aparılması olub. Komandamızın bu nəticəsi gənc futbolçularımızın inkişaf səviyyəsinin göstəricisidir.",
+      ru: "Команда Zirvə FC U-12 приняла участие в селекционном турнире, который прошёл в Учебно-тренировочном центре национальных сборных в рамках проекта Elit layihəsi, и заняла 2-е место.\n\nОсновной целью турнира было выявление талантливых футболистов из разных команд для последующего привлечения в проект Elit layihəsi. Этот результат — показатель уровня подготовки наших молодых игроков.",
+      en: "The Zirvə FC U-12 team took part in a selection tournament held at the National Teams Training Center as part of the Elit layihəsi project, finishing in 2nd place.\n\nThe main purpose of the tournament was to scout talented players from different teams for potential inclusion in the Elit layihəsi project. This result reflects the development level of our young players."
+    }
   }, // Копируйте новость сверху (Я отметил откуда) и вставляете вниз. Меняете id на один больше предыдущего. И данные заполняете
   // Не рекомендую иметь сильно много новостей, старые новости лучше заменять
 ];
