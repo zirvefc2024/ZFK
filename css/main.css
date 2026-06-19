@@ -29,6 +29,8 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -39,7 +41,10 @@ body {
     radial-gradient(circle at 90% 10%, rgba(25, 79, 159, 0.2), transparent 22%),
     linear-gradient(180deg, #07111f 0%, #0b1830 35%, #07111f 100%);
   min-height: 100vh;
+  width: 100%;
+  max-width: 100vw;
   overflow-x: hidden;
+  position: relative;
 }
 
 body::before {
@@ -63,6 +68,7 @@ body::before {
   opacity: 0.22;
   z-index: -1;
   pointer-events: none;
+  contain: strict;
 }
 
 .bg-blur-1 {
@@ -95,13 +101,20 @@ button {
   cursor: pointer;
 }
 
+main {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .container {
   width: min(100% - 32px, var(--container));
   margin-inline: auto;
+  max-width: 100%;
 }
 
 .section {
   padding: 56px 0;
+  max-width: 100%;
 }
 
 .site-header {
@@ -139,6 +152,7 @@ button {
   display: flex;
   flex-direction: column;
   line-height: 1.1;
+  min-width: 0;
 }
 
 .brand-title {
@@ -150,6 +164,9 @@ button {
 .brand-subtitle {
   color: var(--muted);
   font-size: 0.88rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .main-nav {
@@ -171,7 +188,9 @@ button {
 }
 
 .main-nav a:hover,
-.mobile-menu a:hover {
+.mobile-menu a:hover,
+.main-nav a:focus-visible,
+.mobile-menu a:focus-visible {
   background: rgba(255, 255, 255, 0.08);
   color: #fff;
 }
@@ -236,6 +255,8 @@ button {
   display: none;
   flex-direction: column;
   gap: 6px;
+  max-height: 70vh;
+  overflow-y: auto;
 }
 
 .team-switcher.open .team-switch-menu {
@@ -252,7 +273,8 @@ button {
 }
 
 .team-option:hover,
-.team-option.active {
+.team-option.active,
+.team-option:focus-visible {
   background: linear-gradient(135deg, var(--accent), var(--secondary-light));
   color: #fff;
 }
@@ -275,7 +297,8 @@ button {
 }
 
 .lang-btn:hover,
-.lang-btn.active {
+.lang-btn.active,
+.lang-btn:focus-visible {
   transform: translateY(-2px);
   background: linear-gradient(135deg, var(--accent), var(--secondary-light));
   box-shadow: var(--shadow);
@@ -289,6 +312,7 @@ button {
   background: rgba(255,255,255,0.06);
   border: 1px solid var(--line);
   padding: 10px;
+  flex-shrink: 0;
 }
 
 .burger span {
@@ -415,7 +439,8 @@ button {
   background: rgba(255,255,255,0.05);
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus-visible {
   transform: translateY(-3px);
 }
 
@@ -438,6 +463,7 @@ button {
   font-size: 1.25rem;
   font-weight: 800;
   margin-bottom: 6px;
+  word-break: break-word;
 }
 
 .stat-label {
@@ -574,6 +600,8 @@ button {
   overflow-x: auto;
   padding-bottom: 10px;
   scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
 }
 
 .news-row::-webkit-scrollbar,
@@ -726,6 +754,7 @@ button {
   border-radius: 50%;
   background: rgba(255,255,255,0.08);
   padding: 3px;
+  flex-shrink: 0;
 }
 
 .club-name {
@@ -765,6 +794,7 @@ button {
   width: 80px;
   height: 80px;
   object-fit: contain;
+  flex-shrink: 0;
 }
 
 .match-team-info strong {
@@ -913,7 +943,8 @@ button {
   transition: 0.35s ease;
 }
 
-.player-card:hover .player-stats {
+.player-card:hover .player-stats,
+.player-card:focus-within .player-stats {
   opacity: 1;
   transform: translateY(0);
 }
@@ -1073,7 +1104,8 @@ button {
   transition: var(--transition);
 }
 
-.footer-link-btn:hover {
+.footer-link-btn:hover,
+.footer-link-btn:focus-visible {
   transform: translateY(-2px);
   background: linear-gradient(135deg, rgba(239,44,122,0.18), rgba(25,79,159,0.22));
 }
@@ -1241,6 +1273,25 @@ button {
   }
 }
 
+@media (max-width: 980px) and (min-width: 861px) {
+  .header-controls {
+    gap: 8px;
+  }
+
+  .team-switch-btn {
+    padding: 0 12px;
+  }
+
+  .lang-switcher {
+    gap: 6px;
+  }
+
+  .lang-btn {
+    width: 38px;
+    height: 38px;
+  }
+}
+
 @media (max-width: 860px) {
   .lang-switcher {
     display: none;
@@ -1282,6 +1333,10 @@ button {
   .match-side,
   .match-center {
     justify-content: center;
+  }
+
+  .section {
+    padding: 44px 0;
   }
 }
 
@@ -1327,40 +1382,77 @@ button {
   }
 
   .header-inner {
+    gap: 8px;
+  }
+
+  .brand {
     gap: 10px;
   }
 
   .brand-title {
-    font-size: 1.05rem;
+    font-size: 0.98rem;
   }
 
   .brand-subtitle {
-    font-size: 0.78rem;
+    font-size: 0.72rem;
+    max-width: 130px;
   }
 
   .brand-logo {
-    width: 48px;
-    height: 48px;
+    width: 42px;
+    height: 42px;
+  }
+
+  .header-controls {
+    gap: 8px;
   }
 
   .team-switch-btn {
-    padding: 0 12px;
-    min-height: 40px;
-    gap: 8px;
+    padding: 0 10px;
+    min-height: 38px;
+    gap: 6px;
   }
 
   .team-switch-btn span:first-child {
     display: none;
   }
 
+  .team-switch-btn strong {
+    font-size: 0.85rem;
+  }
+
+  .burger {
+    width: 40px;
+    height: 40px;
+  }
+
+  .hero {
+    padding-top: 32px;
+  }
+
   .hero-content h1 {
-    font-size: 2rem;
+    font-size: 1.7rem;
+    line-height: 1.08;
+  }
+
+  .hero-text {
+    font-size: 0.98rem;
+  }
+
+  .btn {
+    min-height: 46px;
+    padding: 0 18px;
+    font-size: 0.95rem;
   }
 
   .news-card,
   .player-card {
     min-width: 86vw;
     max-width: 86vw;
+  }
+
+  .player-card {
+    height: 420px;
   }
 
   .news-modal-image {
@@ -1380,6 +1472,28 @@ button {
 
   .achievement-row {
     padding: 14px 8px;
+  }
+
+  .table-head,
+  .table-row {
+    grid-template-columns: 36px minmax(0, 1fr) 70px;
+    gap: 10px;
+  }
+
+  .points-badge {
+    min-width: 56px;
+    padding: 8px 10px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .brand-subtitle {
+    display: none;
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem;
   }
 }
 
@@ -1403,6 +1517,7 @@ button {
   font-weight:800;
   color:#ff4d94;
   transition:.3s;
+  word-break: break-word;
 }
 
 .insta-link:hover{
@@ -1517,4 +1632,39 @@ button {
     justify-self: center;
     max-width: 420px;
   }
+}
+
+@media (max-width: 560px) {
+  .training-video-card {
+    padding: 20px;
+    gap: 24px;
+    border-radius: 20px;
+  }
+
+  .training-video-frame {
+    max-width: 320px;
+  }
+}
+
+/* Доступность: уважаем системную настройку "уменьшить анимацию" */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .floating {
+    animation: none;
+  }
+}
+
+/* Видимый фокус для клавиатурной навигации (важно и для UX, и для SEO/accessibility сигналов) */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
 }
