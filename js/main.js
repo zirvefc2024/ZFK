@@ -1304,7 +1304,7 @@ const clubData = {
   }
 };
 
-let currentLang = "ru";
+let currentLang = "az";
 let currentTeam = "u13";
 
 const newsList = document.getElementById("newsList");
@@ -1401,7 +1401,7 @@ function renderNews() {
     card.style.animationDelay = `${index * 0.08}s`;
 
     card.innerHTML = `
-      <img class="news-card-image" src="${item.image}" alt="${item.title[currentLang]}" />
+      <img class="news-card-image" src="${item.image}" alt="${item.title[currentLang]}" loading="lazy" />
       <div class="news-card-body">
         <span class="news-card-date">${item.date}</span>
         <h3 class="news-card-title">${item.title[currentLang]}</h3>
@@ -1466,7 +1466,7 @@ function renderTable() {
     row.innerHTML = `
       <div>${index + 1}</div>
       <div class="table-club">
-        <img src="${team.logo}" alt="${team.name}" class="club-logo" />
+        <img src="${team.logo}" alt="${team.name}" class="club-logo" loading="lazy" />
         <span class="club-name">${team.name}</span>
       </div>
       <div class="points-badge">${team.points}</div>
@@ -1541,7 +1541,7 @@ function renderCoaches() {
 
     card.innerHTML = `
       <div class="coach-photo-wrap">
-        <img src="${coach.photo || "img/anon.jpg"}" alt="${coach.name}" class="coach-photo" />
+        <img src="${coach.photo || "img/anon.jpg"}" alt="${coach.name}" class="coach-photo" loading="lazy" />
       </div>
 
       <div class="coach-card-body">
@@ -1586,7 +1586,7 @@ function renderSquad() {
     card.className = "player-card";
 
     card.innerHTML = `
-      <img src="${player.photo}" alt="${player.name}" class="player-image" />
+      <img src="${player.photo}" alt="${player.name}" class="player-image" loading="lazy" />
       <div class="player-overlay">
         <div class="player-number">${player.number}</div>
         <h3 class="player-name">${player.name}</h3>
