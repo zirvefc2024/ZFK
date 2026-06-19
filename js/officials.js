@@ -68,7 +68,7 @@ const officialsData = [
     name: "Cabbarov Rufat",
     role: {
       az: "Klub meneceri",
-      ru: "Клубный менеджер",
+      ru: "Менеджер Клуба",
       en: "Club Manager"
     },
     experience: {
