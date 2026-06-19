@@ -90,7 +90,7 @@ const officialsData = [
   },
 ];
 
-let currentLang = "ru";
+let currentLang = "az";
 
 const officialsList = document.getElementById("officialsList");
 
@@ -109,6 +109,7 @@ function applyTranslations() {
   });
 
   renderOfficials();
+  updateStructuredData();
 }
 
 function renderOfficials() {
@@ -123,7 +124,7 @@ function renderOfficials() {
         <div class="official-grid reveal" style="transition-delay:${index * 0.06}s">
           <div class="official-media-wrap">
             <div class="official-media">
-              <img src="${official.photo}" alt="${official.name}" class="official-photo" />
+              <img src="${official.photo}" alt="${official.name} — ${official.role[currentLang]}, Zirvə FC" class="official-photo" loading="lazy" />
             </div>
           </div>
 
@@ -159,6 +160,39 @@ function renderOfficials() {
   });
 
   initRevealAnimations();
+}
+
+// SEO: динамически генерируем JSON-LD (Person) под текущих официальных лиц.
+// Это помогает Google понять структуру "люди + должности" на странице
+// и может улучшить отображение в расширенных результатах поиска.
+function updateStructuredData() {
+  const existing = document.getElementById("officialsStructuredData");
+  if (existing) {
+    existing.remove();
+  }
+
+  const peopleSchema = officialsData.map((official) => ({
+    "@type": "Person",
+    "name": official.name,
+    "jobTitle": official.role[currentLang],
+    "description": official.description[currentLang],
+    "image": `https://zirvefc.com/${official.photo}`,
+    "worksFor": {
+      "@type": "SportsClub",
+      "name": "Zirvə FC",
+      "url": "https://zirvefc.com/"
+    }
+  }));
+
+  const script = document.createElement("script");
+  script.type = "application/ld+json";
+  script.id = "officialsStructuredData";
+  script.textContent = JSON.stringify({
+    "@context": "https://schema.org",
+    "@graph": peopleSchema
+  });
+
+  document.head.appendChild(script);
 }
 
 function initLangButtons() {
