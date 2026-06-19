@@ -1009,7 +1009,7 @@ const clubData = {
           ru: "Эльмир Алиев укрепляет футбольные навыки детей, делая акцент на дисциплине, командном духе и постоянном развитии.",
           en: "Elmir Aliyev strengthens children’s football skills by emphasizing discipline, teamwork, and continuous improvement."
         },
-        photo: "img/Elmir m.jpeg"
+        photo: "img/Elm.jpeg"
       }
     ],
     squad: [
