@@ -981,7 +981,7 @@ const clubData = {
     coaches: [
       {
         name: "Elmir Alıyev",
-        experience: "3+",
+        experience: "8+",
         license: 'AFFA "C"',
         text: {
           az: "Elmir Alıyev məşqlərdə intizam, komanda ruhu və davamlı inkişaf prinsipini ön planda saxlayaraq uşaqların futbol biliklərini gücləndirir.",
