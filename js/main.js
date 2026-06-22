@@ -475,6 +475,26 @@ const newsData = [
     }
   }, // Копируйте новость сверху (Я отметил откуда) и вставляете вниз. Меняете id на один больше предыдущего. И данные заполняете
   // Не рекомендую иметь сильно много новостей, старые новости лучше заменять
+   {
+    id: 6,
+    image: "img/H.Anar.jpeg",
+    date: "22.06.2026",
+    title: {
+      az: "Zirvə FC-nin yetirməsi Hacıbala Anar İspaniyanın CE L'Hospitalet klubuna qoşuldu",
+      ru: "Воспитанник Zirvə FC Hacıbala Anar присоединился к испанскому клубу CE L'Hospitalet",
+      en: "Zirvə FC academy graduate Hacıbala Anar joins Spanish club CE L'Hospitalet"
+    },
+    shortText: {
+      az: "Klubumuzun U-13 komandasının yetirməsi Hacıbala Anar Barselona yaxınlığında yerləşən CE L'Hospitalet akademiyasında futbol karyerasını davam etdirir.",
+      ru: "Воспитанник нашей команды U-13 Hacıbala Anar продолжает футбольную карьеру в академии CE L'Hospitalet, расположенной рядом с Барселоной.",
+      en: "Our U-13 academy graduate Hacıbala Anar is continuing his football career at the CE L'Hospitalet academy, based near Barcelona."
+    },
+    fullText: {
+      az: "Zirvə FC-nin U-13 komandasının yetirməsi Hacıbala Anar İspaniyanın CE L'Hospitalet klubunun gənclər akademiyasına qoşulub. Klub Barselona şəhərinin yaxınlığında yerləşir və gənc futbolçuların inkişafı istiqamətində tanınmış akademiyalardan biridir.\n\nHacıbala uzun müddət Zirvə FC-də məşq edərək komandanın əsas heyətinin tərkib hissəsi olub. Onun bu addımı klubumuzun gənc oyunçuların inkişafına verdiyi əhəmiyyəti bir daha təsdiqləyir.\n\nHacıbalaya yeni klubunda uğurlar arzulayırıq!",
+      ru: "Воспитанник команды U-13 Zirvə FC Hacıbala Anar присоединился к молодёжной академии испанского клуба CE L'Hospitalet. Клуб расположен рядом с Барселоной и является одной из известных академий по подготовке молодых футболистов.\n\nHacıbala долгое время тренировался в Zirvə FC и был частью основного состава команды. Этот переход — ещё одно подтверждение того, насколько серьёзно наш клуб подходит к развитию молодых игроков.\n\nЖелаем Hacıbala успехов в новом клубе!",
+      en: "Zirvə FC U-13 academy graduate Hacıbala Anar has joined the youth academy of CE L'Hospitalet, a Spanish club based near Barcelona and known for developing young football talent.\n\nHacıbala spent a long period training at Zirvə FC and was a key part of the squad. His move highlights the strong emphasis our club places on developing young players.\n\nWe wish Hacıbala all the best at his new club!"
+    }
+  },
 ];
 
 const coachBio = {
